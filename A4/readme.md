@@ -16,3 +16,5 @@
 1. Include full citations (author name, URL and date accessed) for each citation you include.
 2. If you have used any images or content that you have created yourself, include a comment in the references AND in the part of the code in which you use the content to indicate that the content was created by yourself.
 3. IF YOU HAVE NOT USED ANY EXTERNAL MATERIAL TO STUDY OR LEARN NEW CONCEPTS IN THIS ASSIGNMENT, INCLUDE A NOTE HERE IN THIS SECTION TO INDICATE SO.
+
+Have not used any materials that are not the ones from the class lectures

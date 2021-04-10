@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if (!isset($SESSION['username'])) 
+	if (!isset($_SESSION['username'])){ 
 		// access control
 		header("Location: index.php?noaccess=1");
 		die();

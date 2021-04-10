@@ -27,7 +27,7 @@
 							</li>
 
 					<?php 
-						if (isset($SESSION['username'])) 
+						if (isset($_SESSION['username'])){ 
 					?>
 					
 							<li class="nav-item active">
@@ -41,10 +41,13 @@
 							</li>
 					<?php
 						}
-						els {
+						else {
 					?>
 							<li class="nav-item active">
 								<a class="nav-link" aria-current="page" href="jedi-login.php">Login</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" aria-current="page" href="register.php">Register</a>
 							</li>
 					<?php
 						}

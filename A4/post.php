@@ -10,7 +10,7 @@
 	*/
 
 	require_once "includes/header.php";
-	require_once "includesdb.php";
+	require_once "includes/db.php";
 
 ?>
 

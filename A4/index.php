@@ -1,5 +1,5 @@
 <?php
-	sessionstart()
+	session_start();
 ?>
 <?php
 	/*
@@ -12,7 +12,7 @@
 	*/
 
 	require_once "includes/header.php";
-	require_once "includesdb.php";
+	require_once "includes/db.php";
 
 ?>
 
@@ -27,8 +27,8 @@
 				</div>
 			</div>
 
-			<php
-				if (isset($GET['post-success"])) {
+			<?php
+				if (isset($GET['post-success'])) {
 			?>
 
 			<div class="text-center">
@@ -76,14 +76,14 @@
 								$sql .= " where jedi_post_title like '%" . $_GET['search-keywords'] . "%'";
 							}
 
-							$result = $dbconnection-query($sql);
+							$result = $dbconnection->query($sql);
 	
 							if ($result == null) {
 								echo "Sorry, no blogs available for your search. Try searching with another keyword.";
 							}
 							elseif ($result->num_rows > 0) {
 								$index = 1;
-								while ($row = $result-fetch_assoc()) {
+								while ($row = $result->fetch_assoc()) {
 ?>
 					<hr>
 					<section id="<?php echo "result" . $index++; ?>" class="space-above-below">

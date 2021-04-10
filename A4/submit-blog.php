@@ -1,6 +1,6 @@
 <?php
-	sessionstart();
-	obstart();
+	session_start();
+	ob_start();
 ?>
 <?php
 	/*
@@ -15,7 +15,7 @@
 
 	require_once "includes/header.php";
 
-	if (!isset($_SESSION['username'])) 
+	if (!isset($_SESSION['username'])){ 
 		// access control
 		header("Location: index.php?noaccess=1");
 		die();

@@ -14,8 +14,8 @@
 
 	$dbconnection = new mysqli($hostservername, $username, $password, $dbname);
 
-	if ($dbconnection-connect_error) 
-		die("Nooooooooo<br>" . $dbconnection-connect_error);
+	if ($dbconnection->connect_error){ 
+		die("Nooooooooo<br>" . $dbconnection->connect_error);
 	}
 	else {
 		//echo "<h1>Connected!</h1>";
